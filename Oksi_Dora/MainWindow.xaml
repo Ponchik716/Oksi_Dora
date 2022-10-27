@@ -1,0 +1,25 @@
+﻿<Window x:Class="Oksi_Dora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oksi_Dora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF04A0FF"></Rectangle>
+        <Image Source="/Resources/school_logo.png" HorizontalAlignment="Left" ></Image>
+        <TextBlock x:Name="TitlePage" FontSize="30" Style="{StaticResource Mystyle}">Школа языков "Лизинг"</TextBlock>
+        <Rectangle Grid.Row="2" Fill="#FF04A0FF"></Rectangle>
+        <Button Style="{StaticResource Rectangle}" x:Name="BackBTN" Grid.Row="2" HorizontalAlignment="Left" Content="Назад" Margin="15" Click="BackBTN_Click" />
+        <Button Style="{StaticResource Circle}" x:Name="ExitBTN" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Выход" Margin="9" Click="ExitBTN_Click"></Button>
+        <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden" Grid.Row="1">
+            
+        </Frame>
+    </Grid>
+</Window>

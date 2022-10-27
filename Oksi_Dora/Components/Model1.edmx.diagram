@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="56a730b14bf34dffad91eb5fa49c1bf4" Name="Diagram1">
+        <EntityTypeShape EntityType="OksFord_DoraModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Gender" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Service" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.ServicePhoto" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.AttachedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="OksFord_DoraModel.TagOfClient" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.Role" Width="1.5" PointX="0.75" PointY="21" />
+        <EntityTypeShape EntityType="OksFord_DoraModel.User" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_Client_User" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_User_Role" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_Client_User" />
+        <AssociationConnector Association="OksFord_DoraModel.FK_User_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
